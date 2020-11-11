@@ -6,7 +6,8 @@ $mysqli = new mysqli('localhost', 'root', '', 'Mantice') or die (mysqli_error($m
 if (isset($_POST['login'])){
     $name = $_POST['name'];
     $password = $_POST['password'];
-    
-    $mysqli->query("INSERT INTO users (name, password) VALUES('$name', '$password')") or 
+    $Cellnumber = $_POST['Cellnumber'];
+    $Email = $_POST['Email'];
+    $mysqli->query("INSERT INTO users (name, password, Cellnumber, Email) VALUES('$name', '$password','$Cellnumber','$Email')") or 
             die($mysqli->error);
 }

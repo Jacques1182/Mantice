@@ -17,20 +17,55 @@ and open the template in the editor.
 
     </head>
     <body>
-        <?php require_once 'process.php';?>
+        <?php require_once 'process.php'; ?>
         <div class="row justify-content-center">
             <form action="process.php" method="POST">
-                <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" name="name" value="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" name="password" value="Enter your location">
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary" name="login">Login</button>
-                </div>
+                <table>
+                    <tr>
+                    <div class="form-group">
+                        <td>
+                            <label>Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </td>
+
+                    </div>
+                    </tr>
+                    <tr>
+                    <div class="form-group">
+                        <td>
+                            <label>Password</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" placeholder="Enter your location">
+                        </td>
+                    </div>
+                    </tr>
+                    <tr>
+                    <div class="form-group">
+                        <td>    
+                            <label>Cellnumber</label>
+                        </td>
+                        <td>
+                            <input type="number" name="Cellnumber" placeholder="Enter your cellphone number"> 
+                        </td>
+                    </div>
+                    </tr>
+                    <tr>
+                    <div class="form-group">
+                        <td>  
+                            <label>Email</label>
+                        </td>  
+                        <td>  
+                            <input type="email" name="Email" placeholder="Enter your email address">
+                        </td>
+                    </div>
+                    </tr>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" name="login">Login</button>
+                    </div>
+                </table>  
             </form>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
