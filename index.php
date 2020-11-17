@@ -62,9 +62,13 @@ and open the template in the editor.
                         </td>
                     </div>
                     </tr>
+                    <tr>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary" name="login">Login</button>
+                        <td>
+                            <button type="submit" class="btn btn-primary" name="SignUp">Login</button>
+                        </td>
                     </div>
+                    </tr>
                 </table>  
             </form>
         </div>

@@ -12,30 +12,37 @@
 
     </head>
     <body>
+        <?php require_once 'process.php'; ?>
         <form action="process.php" method="POST">
             <div class="">
                 <div class="h-100 d-flex justify-content-center align-items-center">
                     <table>
                         <tr>
                         <div class="form-group">
-                            <td>
-                                <label>Name</label>
+                            <td class="pt-4">
+                                <label>Username</label>
                             </td>
                             <td>
-                                <input type="text" name="Username" placeholder="Enter your username">
+                                <input class="pr-5" type="text" name="Username" placeholder="Enter your username">
                             </td>
-
                         </div>
                         </tr>
                         <tr>
                         <div class="form-group">
-                            <td>
+                            <td class="pt-4">
                                 <label>Password</label>
                             </td>
                             <td>
-                                <input type="password" name="password" placeholder="Enter your password">
+                                <input class='pr-5' type="password" name="password" placeholder="Enter your password">
                             </td>
                         </div> 
+                        <tr>
+                        <div class="form-group">
+                            <td class="pt-5"> 
+                                <button type="submit" class="btn btn-primary" name="Username">Login</button>
+                            </td>
+                        </div>
+                        </tr>
                     </table>
                 </div>
             </div>    
